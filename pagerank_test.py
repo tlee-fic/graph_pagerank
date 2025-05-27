@@ -1,7 +1,7 @@
 # Thomas Lee
 # FI Consulting
 # Graph PageRank for Predictive Analytics
-# pagerank_2.py
+# pagerank_test.py
 
 
 import networkx as nx
@@ -14,19 +14,15 @@ from functions import normalize, prGetColor
 # Instantiate NetworkX Graph
 N = nx.DiGraph()
 # Declare output file name
-outputFile = "graph_2.html"
+outputFile = "graph_5.html"
 # Declare nodes and edges of graph
 nodes, edges = [], []
 nodes = [
-    1, 2, 3, 4, 5, 6
+    1, 2, 3
 ]
 edges = [
     [1, 2],
     [2, 3],
-    [3, 4],
-    [4, 5],
-    [5, 1],
-    [6, 1]
 ]
 # Insert nodes and edges into NetworkX Graph
 for node in nodes:
